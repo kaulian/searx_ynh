@@ -101,7 +101,7 @@ pip3 install -U pip setuptools --no-cache-dir
 pip3 install -U wheel  --no-cache-dir
 #pip3 install -U pyyaml --no-cache-dir
 pip3 install --no-cache-dir --no-binary pyyaml pyyaml
-pip3 install --no-cache-dir --no-binary  setproctitle setproctitle
+#pip3 install --no-cache-dir --no-binary  setproctitle setproctitle
 pip3 install --requirement $final_path/requirements-ynh.txt --no-cache-dir
 
 #=================================================
