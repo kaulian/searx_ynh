@@ -99,6 +99,7 @@ set +u; source $final_path/bin/activate; set -u
 #pip3 install -U pip setuptools wheel pyyaml --no-cache-dir
 pip3 install -U pip setuptools --no-cache-dir
 pip3 install -U --no-use-pep517 wheel pyyaml --no-cache-dir
+pip3 install -U --no-use-pep517 wheel --no-cache-dir
 pip3 install --requirement $final_path/requirements-ynh.txt --no-cache-dir
 
 #=================================================
