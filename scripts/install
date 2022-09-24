@@ -98,8 +98,9 @@ python3 -m venv --system-site-packages "$final_path"
 set +u; source $final_path/bin/activate; set -u
 #pip3 install -U pip setuptools wheel pyyaml --no-cache-dir
 pip3 install -U pip setuptools --no-cache-dir
-pip3 install -U --no-use-pep517 wheel  --no-cache-dir
-pip3 install -U pyyaml --no-cache-dir
+pip3 install -U wheel  --no-cache-dir
+#pip3 install -U pyyaml --no-cache-dir
+pip3 install --no-cache-dir --no-binary pyyaml pyyaml
 pip3 install --requirement $final_path/requirements-ynh.txt --no-cache-dir
 
 #=================================================
